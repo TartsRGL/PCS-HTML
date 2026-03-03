@@ -33,5 +33,5 @@ chore: final semantic sanity check
 
 ### 🙏 Acknowledgment
 
-Special thanks to [Praha Coding School](https://www.prahacodingschool.cz)
+Special thanks to [Praha Coding School](https://www.prahacoding.cz)
 for the educational foundation.
