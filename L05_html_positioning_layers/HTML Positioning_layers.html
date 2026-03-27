@@ -10,26 +10,40 @@
 
 <body>
 
+  <!-- Commit 3 – Structure for sticky/fixed components -->
+  <div id="global-notice" class="fixed-element">
+    <p>Important Update: Positioning is about the DOM tree.</p>
+  </div>
+
   <header>
     <h1>Positioning Prep</h1>
     <p>Everything starts with a container.</p>
   </header>
 
+  <!-- Commit 3 – Structure for sticky/fixed components -->
+  <nav class="sticky-nav">
+    <ul>
+      <li><a href="#parent">Parent</a></li>
+      <li><a href="#layers">Layers</a></li>
+      <li><a href="#stacking">Stacking</a></li>
+    </ul>
+  </nav>
+
   <main>
     <article class="positioning-parent">
       <header>
-        <h2>The Parent Container</h2>
+        <h2 id="parent">The Parent Container</h2>
         <!-- Commit 2 – Add overlay/layering markup -->
         <span class="status-badge" aria-label="Status">Draft</span>
         <p>This element will act as the anchor for everything inside it.</p>
       </header>
 
-      <section class="child-content">
+      <section id="layers" class="child-content">
         <p>In CSS, this would be the flow-relative content. It stays in the normal flow.</p>
       </section>
 
       <!-- Commit 2 – Add overlay/layering markup -->
-      <aside class="overlay-note">
+      <aside id="stacking" class="overlay-note">
         <p>This note will sit on top of the content once positioned.</p>
       </aside>
     </article>
