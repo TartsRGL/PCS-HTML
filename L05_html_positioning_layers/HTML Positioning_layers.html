@@ -43,7 +43,8 @@
         <p>In CSS, this would be the flow-relative content.</p>
         
         <div id="stacking" class="tooltip-container">
-          <button type="button" aria-expanded="false">More Info</button>
+          <!-- Commit 5 – Final polish of the positioning-ready skeleton -->
+          <button type="button" aria-expanded="false" title="Learn more about positioning">More Info</button>
           
           <div class="tooltip-body" role="tooltip">
              <p>I am a nested layer inside a child element.</p>
@@ -51,9 +52,11 @@
         </div>
       </section>
 
-      <!-- Commit 2 – Add overlay/layering markup -->
+      <!-- Commit 5 – Final polish of the positioning-ready skeleton -->
+      <!-- (Natural source order/stacking prep also goes here) -->
       <aside class="overlay-note">
-        <p>This note will sit on top of the content once positioned.</p>
+        <!-- Commit 2 – Add overlay/layering markup -->
+        <p>This note will sit on top of the content once positioned. Its place in the HTML helps define order, but stacking in CSS depends on more than source order alone.</p>
       </aside>
     </article>
   </main>
