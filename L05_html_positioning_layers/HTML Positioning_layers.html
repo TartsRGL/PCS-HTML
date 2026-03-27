@@ -38,12 +38,21 @@
         <p>This element will act as the anchor for everything inside it.</p>
       </header>
 
-      <section id="layers" class="child-content">
-        <p>In CSS, this would be the flow-relative content. It stays in the normal flow.</p>
+      <!-- Commit 4 – Nested stacking contexts -->
+      <section id="layers" class="child-content has-tooltip">
+        <p>In CSS, this would be the flow-relative content.</p>
+        
+        <div id="stacking" class="tooltip-container">
+          <button type="button" aria-expanded="false">More Info</button>
+          
+          <div class="tooltip-body" role="tooltip">
+             <p>I am a nested layer inside a child element.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Commit 2 – Add overlay/layering markup -->
-      <aside id="stacking" class="overlay-note">
+      <aside class="overlay-note">
         <p>This note will sit on top of the content once positioned.</p>
       </aside>
     </article>
