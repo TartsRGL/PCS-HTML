@@ -16,16 +16,22 @@
   </header>
 
   <main>
-    <!-- We start by creating a "Scene" or "Card" container -->
     <article class="positioning-parent">
       <header>
         <h2>The Parent Container</h2>
+        <!-- Commit 2 – Add overlay/layering markup -->
+        <span class="status-badge" aria-label="Status">Draft</span>
         <p>This element will act as the anchor for everything inside it.</p>
       </header>
 
       <section class="child-content">
         <p>In CSS, this would be the flow-relative content. It stays in the normal flow.</p>
       </section>
+
+      <!-- Commit 2 – Add overlay/layering markup -->
+      <aside class="overlay-note">
+        <p>This note will sit on top of the content once positioned.</p>
+      </aside>
     </article>
   </main>
 
