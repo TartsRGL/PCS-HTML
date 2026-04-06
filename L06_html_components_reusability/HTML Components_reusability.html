@@ -23,9 +23,20 @@
       <article class="ui-component">
         <!-- Commit 2 – Extract reusable card structure -->
         <div class="card">
-          <h3>Product Item</h3>
-          <p>This paragraph contains a block of text describing the product.</p>
-          <button type="button">Buy Now</button>
+          
+          <!-- Commit 3 – Organize component internal structure -->
+          <header class="card-header">
+            <h3 class="card-title">Product Item</h3>
+          </header>
+          
+          <div class="card-body">
+            <p class="card-description">This paragraph contains a block of text describing the product.</p>
+          </div>
+          
+          <footer class="card-footer">
+            <button type="button" class="card-button">Buy Now</button>
+          </footer>
+
         </div>
       </article>
 
