@@ -22,10 +22,14 @@
       <!-- Commit 1 – Define base component container -->
       <article class="ui-component">
         <!-- Commit 2 – Extract reusable card structure -->
-        <div class="card">
+        
+        <!-- Commit 4 – Prepare classes for component variants (e.g., card--featured) -->
+        <div class="card card--featured">
           
           <!-- Commit 3 – Organize component internal structure -->
           <header class="card-header">
+            <!-- Commit 4 – Prepare classes for component variants -->
+            <span class="card-badge">Featured</span>
             <h3 class="card-title">Product Item</h3>
           </header>
           
@@ -34,7 +38,8 @@
           </div>
           
           <footer class="card-footer">
-            <button type="button" class="card-button">Buy Now</button>
+            <!-- Commit 4 – Prepare classes for component variants -->
+            <button type="button" class="card-button card-button--primary">Buy Now</button>
           </footer>
 
         </div>
