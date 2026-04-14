@@ -1,4 +1,4 @@
-<!-- Commit 2 - Add basic inputs with accessible labels -->
+<!-- Commit 3 - Group logical fields with fieldsets -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,6 @@
       <form action="/submit-registration" method="POST" novalidate>
         
         <!-- Commit 2 - Add basic inputs with accessible labels -->
-        <!-- Each input correctly paired using id and for attribute -->
         <div class="form-group">
           <label for="first-name">First Name</label>
           <input type="text" id="first-name" name="first_name" required />
@@ -33,6 +32,22 @@
           <label for="email-address">Email Address</label>
           <input type="email" id="email-address" name="email" required />
         </div>
+
+        <!-- Commit 3 - Group logical fields with fieldsets -->
+        <!-- Using fieldset and legend to structure related inputs, aiding screen readers -->
+        <fieldset class="form-group">
+          <legend>Account Type</legend>
+          
+          <div class="radio-choice">
+            <input type="radio" id="type-personal" name="account_type" value="personal" checked />
+            <label for="type-personal">Personal</label>
+          </div>
+
+          <div class="radio-choice">
+            <input type="radio" id="type-business" name="account_type" value="business" />
+            <label for="type-business">Business</label>
+          </div>
+        </fieldset>
 
       </form>
 
