@@ -1,4 +1,4 @@
-<!-- Commit 4 - Implement structured errors and hints -->
+<!-- Commit 5 - Complete complex form composition -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,14 +29,12 @@
         </div>
 
         <!-- Commit 4 - Implement structured errors and hints -->
-        <!-- Add aria-describedby pointing to the hint to give screen readers proper context -->
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required aria-describedby="pwd-hint" />
           <p id="pwd-hint" class="input-hint">Must be at least 8 characters long.</p>
         </div>
 
-        <!-- Simulated error state using aria-invalid and aria-errormessage -->
         <div class="form-group has-error">
           <label for="email-address">Email Address</label>
           <input type="email" id="email-address" name="email" required aria-invalid="true" aria-errormessage="email-error" />
@@ -57,6 +55,17 @@
             <label for="type-business">Business</label>
           </div>
         </fieldset>
+
+        <!-- Commit 5 - Complete complex form composition -->
+        <!-- Provide structured submit area, like terms agreement and primary button -->
+        <div class="form-actions">
+          <div class="checkbox-choice">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the <a href="/terms">Terms and Conditions</a>.</label>
+          </div>
+          
+          <button type="submit" class="btn-submit">Create Account</button>
+        </div>
 
       </form>
 
