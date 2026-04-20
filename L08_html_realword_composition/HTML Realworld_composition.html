@@ -1,4 +1,4 @@
-<!-- Commit 3 - Embed rich media and aside container -->
+<!-- Commit 4 - Compose accessible contact form -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +32,6 @@
         </header>
 
         <figure>
-          <!-- Using a generic placeholder for the lesson -->
           <img src="https://via.placeholder.com/800x400.png?text=Web+Accessibility+Tree" alt="Diagram showing how HTML tags create an accessibility tree for screen readers" loading="lazy" />
           <figcaption>Fig 1. The translation of HTML nodes into the Accessibility Tree.</figcaption>
         </figure>
@@ -45,6 +44,27 @@
         <section aria-labelledby="inclusive-heading">
           <h2 id="inclusive-heading">Building for Everyone</h2>
           <p>Correct use of tags like <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;header&gt;</code> isn't just about code cleanliness. It allows screen readers, search engines, and assistive technologies to understand the exact structure and meaning of your document.</p>
+        </section>
+
+        <hr>
+
+        <!-- Form integration from L7 knowledge -->
+        <section aria-labelledby="newsletter-heading">
+          <h2 id="newsletter-heading">Stay Updated</h2>
+          <p>Sign up to receive our Weekly Dev Tips right in your inbox.</p>
+          
+          <form action="/subscribe-newsletter" method="POST" novalidate>
+            <fieldset>
+              <legend>Contact Details</legend>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required aria-describedby="name-hint" />
+              <p id="name-hint" class="hint" style="font-size: 0.8rem; color: #555;">How should we address you?</p>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </fieldset>
+            <button type="submit">Subscribe</button>
+          </form>
         </section>
         
         <footer>
