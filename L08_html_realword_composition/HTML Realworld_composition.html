@@ -1,4 +1,4 @@
-<!-- Commit 1 - Scaffold base page anatomy and layout -->
+<!-- Commit 2 - Integrate semantic article with text hierarchy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- Accessible skip link for keyboard users -->
   <a href="#main-content" class="skip-link" style="position:absolute; top:-40px;">Skip to main content</a>
 
   <header>
@@ -24,7 +23,28 @@
   </header>
 
   <main id="main-content">
-    <!-- Future semantic content will be placed here -->
+    
+    <article>
+      <header>
+        <h1>The Silent Power of Web Accessibility</h1>
+        <p>Published on <time datetime="2026-04-20">April 20, 2026</time> by Antonín Pergl</p>
+      </header>
+      
+      <section aria-labelledby="foundation-heading">
+        <h2 id="foundation-heading">Beyond Aesthetics</h2>
+        <p>In modern web development, we spend countless hours polishing CSS grid layouts and writing clever JavaScript frameworks. However, beneath the visual layer lies the true foundation of the web: semantic HTML.</p>
+      </section>
+
+      <section aria-labelledby="inclusive-heading">
+        <h2 id="inclusive-heading">Building for Everyone</h2>
+        <p>Correct use of tags like <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;header&gt;</code> isn't just about code cleanliness. It allows screen readers, search engines, and assistive technologies to understand the exact structure and meaning of your document.</p>
+      </section>
+      
+      <footer>
+        <p>Category: <em>Web Engineering</em></p>
+      </footer>
+    </article>
+
   </main>
 
   <footer>
